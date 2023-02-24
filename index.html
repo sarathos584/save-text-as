@@ -9,22 +9,22 @@
 </head>
 <body>
     <div class="wrapper">
-        <textarea></textarea>
+        <textarea required placeholder="Enter something to save....">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, voluptate. Minus quia illum consequuntur, dolores molestias dicta quibusdam mollitia repudiandae dignissimos error? Perferendis rerum corporis at quam aperiam vel saepe dolorem necessitatibus illum, quos laudantium fugit cupiditate modi eligendi, odit officiis. Eos nesciunt labore unde!</textarea>
         <div class="file-options">
             <div class="option file-name">
                 <label>File name</label>
-                <input type="text" placeholder="Enter file name">
+                <input type="text" placeholder="Enter file name" id="file-name-input" required>
             </div>
             <div class="option save-as">
                 <label for="">Save as</label>
                 <div class="select-menu">
-                    <select>
-                        <option value="">Text File (.txt)</option>
-                        <option value="">JS File (.js)</option>
-                        <option value="">HTML File (.html)</option>
-                        <option value="">SVG File (.svg)</option>
-                        <option value="">Doc File (.doc)</option>
-                        <option value="">PPT File (.ppt)</option>
+                    <select id="file-extension">
+                        <option value="text/plain">Text File (.txt)</option>
+                        <option value="text/javascript">JS File (.js)</option>
+                        <option value="text/html">HTML File (.html)</option>
+                        <option value="image/svg+xml">SVG File (.svg)</option>
+                        <option value="application/msword">Doc File (.doc)</option>
+                        <option value="	application/vnd.ms-powerpoint">PPT File (.ppt)</option>
                     </select>
                 </div>
             </div>

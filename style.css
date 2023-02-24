@@ -69,7 +69,17 @@ body{
         border: none;
         font-size: 1.3rem;
         cursor: pointer;
+        pointer-events: none;
+        opacity: 0.6;
     }
+    .wrapper textarea:valid ~ button {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    
+
+    
+
     @media screen and (max-width:460px) {
         .wrapper .file-options{
             flex-direction: column;
@@ -79,5 +89,13 @@ body{
 
         .wrapper .file-options .option input,.wrapper .file-options .option select{
             width: 100%;
+        }
+        body {
+            padding: 0;
+            margin: 0;
+
+        }
+        .wrapper{
+            height: 100%;
         }
     }
